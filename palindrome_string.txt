@@ -1,0 +1,39 @@
+Palindrome String
+
+
+Given a string S, check if it is palindrome or not.
+
+Example 1:
+
+Input: S = "abba"
+Output: 1
+Explanation: S is a palindrome
+Example 2:
+
+Input: S = "abc" 
+Output: 0
+Explanation: S is not a palindrome
+--------------------------------------------------------------------------
+----------------------------------------------------------------------------
+class Solution{
+public:	
+	
+	
+	int isPalindrome(string S)
+	{
+	     string temp=S;
+	   int start=0,end=S.size()-1;
+	   while(start<=end){
+	       swap(S[start],S[end]);
+	       start++;
+	       end--;
+	   }
+	  if(temp==S){
+	      return 1;
+	  } 
+	  else{
+	      return 0;
+	  }
+	}
+
+};
