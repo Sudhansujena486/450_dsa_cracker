@@ -1,0 +1,34 @@
+Calculate square of a number
+
+Last Updated: 23 Feb, 2023
+Easy
+40/40
+Avg time to solve 15 mins
+Success Rate 85 %
+Share
+23 upvotes
+Problem Statement
+Detailed explanation ( Input/output format, Notes, Images )
+Sample Input 1:
+2
+3
+-4
+Sample Output 1:
+9
+16
+------------------------------------------
+------------------------------------------
+#include <bits/stdc++.h> 
+int calculateSquare(int num)
+{
+    //    Write your code here.
+    if(num<0)
+    {
+        num=abs(num);
+    }
+    int res=0;
+    for(int i=0;i<num;i++){
+        res=res+num;
+    }
+    return res;
+}
