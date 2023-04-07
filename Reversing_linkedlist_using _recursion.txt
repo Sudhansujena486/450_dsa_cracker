@@ -1,0 +1,20 @@
+Reversing Linked list By doing recursion
+----------------------------------------------
+-----------------------------------------------
+
+Node * reverserec( Node* p){
+     Node * head1;
+     if(p->next==NULL){
+      head1=p;
+      return head1;
+
+     }
+    head1=reverserec(p->next);
+     Node * q=p->next;
+     q->next=p;
+     p->next=NULL;
+     return head1;
+     
+   
+ }
+ 
